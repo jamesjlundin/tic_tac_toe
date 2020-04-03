@@ -3,8 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <h1>Tic Tac Toe</h1>
+        <div id="player-container">
+            <div id="player_1">
+                <h2 id="playerOneInfo">Player 1:</h2>
+                <div id="playerOneContainer" class="player-container">
+                    <label for="name1">Name: </label>
+                    <input id="name1" name="name1" type="text">
+                    <div class="break"></div>
+                    <label for="mark1">Mark: </label>
+                    <input id="mark1" name="mark1" type="text">
+                </div>
+            </div>
+            <div id="player_2">
+                <h2 id="playerTwoInfo">Player 2:</h2>
+                <div id="playerTwoContainer" class="player-container">
+                    <label for="name2">Name: </label>
+                    <input id="name2" name="name2" type="text">
+                    <div class="break"></div>
+                    <label for="mark2">Mark: </label>
+                    <input id="mark2" name="mark2" type="text">
+                </div>
+            </div>
+        </div>
+        <p id="errorMsg">You Must Enter A Name And Mark For Each Player</p>
+        <div class="start-game-button">
+            <button id="beginGame">Start Game</button>
+        </div>
+        <h4 id="turnDisplay">Current Turn: </h4>
+        <div id="main-container">
+            <div id="gameBlock">
+                
+            </div>
+        </div>
+        <div class="new-game-button">
+            <button id="newGameSamePlayers">Start New Game!<br><strong>Same</strong> Players</button>
+            <button id="newGameNewPlayers">Start New Game!<br><strong>New</strong> Players</button>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
